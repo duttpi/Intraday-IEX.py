@@ -21,3 +21,4 @@ def IEX(Days, Ticker):
         Df = Df[['open','high','low','close','volume']]
         Df.columns = ['Open','High','Low','Close','Volume']
         Data = Data.append(Df, ignore_index=False)
+    return Data
