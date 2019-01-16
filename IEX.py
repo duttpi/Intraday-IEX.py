@@ -9,7 +9,6 @@ def IEX(Days, Ticker):
         x = (today - BDay(n)).strftime('%Y%m%d')
         Date.append(x)
 
-    global Data
     Data = pd.DataFrame()
     for n in range (0, Days):
         Url = 'https://api.iextrading.com/1.0/stock/'+Ticker+'/chart/date/'+str(Date[n])
